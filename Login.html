@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login do Usuário</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form>
+
+          <p>Usuário</p>
+          <input type="text" name="username" placeholder="Insira o Nome de Usuário" id="admin">
+          <p>Senha</p>
+          <input type="password" name="password" placeholder="Insira sua Senha" id="123">
+          <input type="submit" name="" value="Entrar" onclick="login(event)">
+          <a href="#">Esqueceu sua senha?</a>
+          <a href="#">Não Possui Conta?Faça um Cadastro</a>
+        </form>
+        <script>
+          function login(event){
+            event.preventDefault();
+          var usuario = document.getElementsByName('username')[0].value;
+          usuario = usuario.toLowerCase();
+          var senha = document.getElementsByName('password')[0].value;
+          var senha = senha.toLowerCase();
+          if (usuario =="admin" && senha == "123") {
+            alert("dados corretos")
+            window.location="EspaçoUsuario.html";
+          }else{
+            alert("Usuário e Senhas Incorretos")
+          }
+        }
+        </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+#fPessoas {
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+#tbPessoas {
+    font: 14px Verdana;
+}
+
+#dGridPessoas {
+    width: 960px;
+    margin-left: 5%;
+}
+
+select {
+    width: 280px;
+    height: 38px;
+}
+
+input[type=button] {
+    width: 180px;
+    height: 48px;
+}
